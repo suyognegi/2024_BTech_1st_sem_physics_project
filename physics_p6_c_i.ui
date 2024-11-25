@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>966</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>981</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>p6_c_i.webp</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>901</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+    background-color: rgba(255, 255, 255, 0.92); /* White background with 80% opacity */
+    border-radius: 50px; /* Rounded corners */
+    padding: 20px; /* Optional: Add some padding inside the box */
+    margin: 20px; /* Optional: Add margin around the box */
+    color: #000000; /* Text color inside the box */
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>80</y>
+      <width>521</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">FONT-SIZE:30PX;</string>
+    </property>
+    <property name="text">
+     <string>LENGTH CONTRACTION CALCULATOR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>510</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #ba3c33, stop: 1 #d36c4b); /* Gradient from #4bb1aa to #f1dfc3 */
+    border-radius: 25px; /* Rounded corners */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjusted padding */
+    font-size: 16px; /* Adjusted font size */
+    transition: background 10s; /* Super slow transition */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #d36c4b, stop: 1 #ba3c33); /* Gradient from #f1dfc3 to #4bb1aa on hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>SOLVE</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>230</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    background: transparent;  /* Transparent background */
+   /* Optional: border for the combo box */
+    padding: 10px;             /* Increased padding inside the combo box */
+    font-size: 16px;           /* Larger font size for the current selection */
+    color: black;              /* Text color for the current selection */
+}
+
+QComboBox::drop-down {
+    background: transparent;   /* Transparent drop-down button */
+    border: none;              /* Remove border from drop-down button */
+}
+
+QComboBox::down-arrow {
+    image: url(none);          /* Remove the default down arrow */
+}
+
+QComboBox QAbstractItemView {
+    background: white;         /* Background for the dropdown list */
+    font-size: 24px;           /* Larger font size for dropdown items */
+    selection-background-color: #f37b31; /* Highlight color for selected item */
+    selection-color: white;    /* Text color for selected item */
+    padding: 15px;             /* Increase padding around the dropdown items */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+
+QComboBox::item {
+    min-height: 50px;          /* Significantly increase the height of each item */
+    padding-left: 15px;        /* Add more padding to the left of each item */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>cm/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>m/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/hr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AU/day</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>pc/Myr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ly/yr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>c</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>230</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background: transparent; /* Makes the background transparent */
+    font-size: 23px; /* Adjusts the font size */
+	font: 12pt &quot;Arial&quot;;
+
+    color: black; /* Sets the text color */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>230</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    background: transparent;  /* Transparent background */
+   /* Optional: border for the combo box */
+    padding: 10px;             /* Increased padding inside the combo box */
+    font-size: 16px;           /* Larger font size for the current selection */
+    color: black;              /* Text color for the current selection */
+}
+
+QComboBox::drop-down {
+    background: transparent;   /* Transparent drop-down button */
+    border: none;              /* Remove border from drop-down button */
+}
+
+QComboBox::down-arrow {
+    image: url(none);          /* Remove the default down arrow */
+}
+
+QComboBox QAbstractItemView {
+    background: white;         /* Background for the dropdown list */
+    font-size: 24px;           /* Larger font size for dropdown items */
+    selection-background-color: #f37b31; /* Highlight color for selected item */
+    selection-color: white;    /* Text color for selected item */
+    padding: 15px;             /* Increase padding around the dropdown items */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+
+QComboBox::item {
+    min-height: 50px;          /* Significantly increase the height of each item */
+    padding-left: 15px;        /* Add more padding to the left of each item */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>cm/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>m/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/hr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AU/day</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>pc/Myr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ly/yr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>c</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>240</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>240</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+    background: transparent; /* Makes the background transparent */
+    font-size: 23px; /* Adjusts the font size */
+	font: 12pt &quot;Arial&quot;;
+
+    color: black; /* Sets the text color */
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>190</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">FONT-SIZE:20PX;</string>
+    </property>
+    <property name="text">
+     <string>Unit Comvertor </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>180</y>
+      <width>391</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0.8); /* White background with 20% opacity */
+border-radius: 15px; /* Rounded corners with a larger radius */
+color: #000000; /* Text color inside the box */
+border: 2px solid #555; /* Darker border with a slightly thicker line */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+padding: 10px; /* Space between the border and text */
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>180</y>
+      <width>251</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>p6_c_i_left_top.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_3">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>360</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    background: transparent;  /* Transparent background */
+   /* Optional: border for the combo box */
+    padding: 10px;             /* Increased padding inside the combo box */
+    font-size: 16px;           /* Larger font size for the current selection */
+    color: black;              /* Text color for the current selection */
+}
+
+QComboBox::drop-down {
+    background: transparent;   /* Transparent drop-down button */
+    border: none;              /* Remove border from drop-down button */
+}
+
+QComboBox::down-arrow {
+    image: url(none);          /* Remove the default down arrow */
+}
+
+QComboBox QAbstractItemView {
+    background: white;         /* Background for the dropdown list */
+    font-size: 24px;           /* Larger font size for dropdown items */
+    selection-background-color: #f37b31; /* Highlight color for selected item */
+    selection-color: white;    /* Text color for selected item */
+    padding: 15px;             /* Increase padding around the dropdown items */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+
+QComboBox::item {
+    min-height: 50px;          /* Significantly increase the height of each item */
+    padding-left: 15px;        /* Add more padding to the left of each item */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>cm/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>m/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/hr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AU/day</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>pc/Myr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ly/yr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>c</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_4">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>400</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    background: transparent;  /* Transparent background */
+   /* Optional: border for the combo box */
+    padding: 10px;             /* Increased padding inside the combo box */
+    font-size: 16px;           /* Larger font size for the current selection */
+    color: black;              /* Text color for the current selection */
+}
+
+QComboBox::drop-down {
+    background: transparent;   /* Transparent drop-down button */
+    border: none;              /* Remove border from drop-down button */
+}
+
+QComboBox::down-arrow {
+    image: url(none);          /* Remove the default down arrow */
+}
+
+QComboBox QAbstractItemView {
+    background: white;         /* Background for the dropdown list */
+    font-size: 24px;           /* Larger font size for dropdown items */
+    selection-background-color: #f37b31; /* Highlight color for selected item */
+    selection-color: white;    /* Text color for selected item */
+    padding: 15px;             /* Increase padding around the dropdown items */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+
+QComboBox::item {
+    min-height: 50px;          /* Significantly increase the height of each item */
+    padding-left: 15px;        /* Add more padding to the left of each item */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>cm/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>m/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/hr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AU/day</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>pc/Myr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ly/yr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>c</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_6">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>360</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background: transparent; /* Makes the background transparent */
+    font-size: 23px; /* Adjusts the font size */
+	font: 10pt &quot;Arial&quot;;
+
+    color: black; /* Sets the text color */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_7">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>400</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background: transparent; /* Makes the background transparent */
+    font-size: 23px; /* Adjusts the font size */
+	font: 10pt &quot;Arial&quot;;
+
+    color: black; /* Sets the text color */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                background-color: transparent;
+                border: none; /* Remove default border */
+                padding: 0;
+                icon-size: 100px; /* Adjust icon size if needed */
+            }
+            QPushButton:hover {
+                background-color: rgba(0, 0, 0, 0.1); /* Slightly darkened background */
+                border: none;
+            }
+            QPushButton::icon {
+                padding: 0;
+                border-image: url(path_to_your_image.png); /* Set image */
+            }
+            QPushButton:hover::icon {
+                border-image: url(path_to_your_hover_image.png); /* Blurred or darkened image on hover */
+            }
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>home.png</normaloff>home.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>510</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #b38f6d, stop: 1 #ad988c); /* Gradient from #4bb1aa to #f1dfc3 */
+    border-radius: 25px; /* Rounded corners */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjusted padding */
+    font-size: 16px; /* Adjusted font size */
+    transition: background 10s; /* Super slow transition */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #ad988c, stop: 1 #b38f6d); /* Gradient from #f1dfc3 to #4bb1aa on hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>← BACK</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>320</y>
+      <width>391</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>p6_c_i_bottom.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

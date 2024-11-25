@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>966</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-20</y>
+      <width>981</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>p3bg.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>811</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+    background-color: rgba(255, 255, 255, 0.9); /* White background with 80% opacity */
+    border-radius: 50px; /* Rounded corners */
+    padding: 20px; /* Optional: Add some padding inside the box */
+    margin: 20px; /* Optional: Add margin around the box */
+    color: #000000; /* Text color inside the box */
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>90</y>
+      <width>471</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">FONT-SIZE:30PX;</string>
+    </property>
+    <property name="text">
+     <string>QUADRATIC EQUATION SOLVER</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>420</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #50a9b8, stop:1 #62ba74); /* Blue to black as main theme */
+    border-radius: 25px; /* Optional: for rounded corners */
+    border: none; /* Optional: remove border */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Optional: adjust padding */
+    font-size: 16px; /* Optional: adjust font size */
+    transition: background 10s; /* Super slow transition */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #62ba74, stop:1 #50a9b8); /* Black to blue on hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>SOLVE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>170</y>
+      <width>431</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>p3_l_4.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>270</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background: transparent; /* Makes the background transparent */
+    font-size: 36px; /* Adjusts the font size */
+
+    color: black; /* Sets the text color */
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>260</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>p3_l_5.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>270</y>
+      <width>51</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>p3_l_6.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>270</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background: transparent; /* Makes the background transparent */
+    font-size: 36px; /* Adjusts the font size */
+
+    color: black; /* Sets the text color */
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>270</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    background: transparent;  /* Transparent background */
+   /* Optional: border for the combo box */
+    padding: 10px;             /* Increased padding inside the combo box */
+    font-size: 44px;           /* Larger font size for the current selection */
+    color: black;              /* Text color for the current selection */
+}
+
+QComboBox::drop-down {
+    background: transparent;   /* Transparent drop-down button */
+    border: none;              /* Remove border from drop-down button */
+}
+
+QComboBox::down-arrow {
+    image: url(none);          /* Remove the default down arrow */
+}
+
+QComboBox QAbstractItemView {
+    background: white;         /* Background for the dropdown list */
+    font-size: 24px;           /* Larger font size for dropdown items */
+    selection-background-color: #f37b31; /* Highlight color for selected item */
+    selection-color: white;    /* Text color for selected item */
+    padding: 15px;             /* Increase padding around the dropdown items */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+
+QComboBox::item {
+    min-height: 50px;          /* Significantly increase the height of each item */
+    padding-left: 15px;        /* Add more padding to the left of each item */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>270</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background: transparent; /* Makes the background transparent */
+    font-size: 36px; /* Adjusts the font size */
+
+    color: black; /* Sets the text color */
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>270</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    background: transparent;  /* Transparent background */
+   /* Optional: border for the combo box */
+    padding: 10px;             /* Increased padding inside the combo box */
+    font-size: 44px;           /* Larger font size for the current selection */
+    color: black;              /* Text color for the current selection */
+}
+
+QComboBox::drop-down {
+    background: transparent;   /* Transparent drop-down button */
+    border: none;              /* Remove border from drop-down button */
+}
+
+QComboBox::down-arrow {
+    image: url(none);          /* Remove the default down arrow */
+}
+
+QComboBox QAbstractItemView {
+    background: white;         /* Background for the dropdown list */
+    font-size: 24px;           /* Larger font size for dropdown items */
+    selection-background-color: #f37b31; /* Highlight color for selected item */
+    selection-color: white;    /* Text color for selected item */
+    padding: 15px;             /* Increase padding around the dropdown items */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+
+QComboBox::item {
+    min-height: 50px;          /* Significantly increase the height of each item */
+    padding-left: 15px;        /* Add more padding to the left of each item */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>250</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>p3_l_9.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>300</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>p3_l_10.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>190</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>p3_l_11.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>180</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background: transparent; /* Makes the background transparent */
+    font-size: 36px; /* Adjusts the font size */
+
+    color: black; /* Sets the text color */
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_6">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>240</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background: transparent; /* Makes the background transparent */
+    font-size: 36px; /* Adjusts the font size */
+
+    color: black; /* Sets the text color */
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_7">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>300</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background: transparent; /* Makes the background transparent */
+    font-size: 36px; /* Adjusts the font size */
+
+    color: black; /* Sets the text color */
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_3">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>270</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    background: transparent;  /* Transparent background */
+   /* Optional: border for the combo box */
+    padding: 10px;             /* Increased padding inside the combo box */
+    font-size: 44px;           /* Larger font size for the current selection */
+    color: black;              /* Text color for the current selection */
+}
+
+QComboBox::drop-down {
+    background: transparent;   /* Transparent drop-down button */
+    border: none;              /* Remove border from drop-down button */
+}
+
+QComboBox::down-arrow {
+    image: url(none);          /* Remove the default down arrow */
+}
+
+QComboBox QAbstractItemView {
+    background: white;         /* Background for the dropdown list */
+    font-size: 24px;           /* Larger font size for dropdown items */
+    selection-background-color: #f37b31; /* Highlight color for selected item */
+    selection-color: white;    /* Text color for selected item */
+    padding: 15px;             /* Increase padding around the dropdown items */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+
+QComboBox::item {
+    min-height: 50px;          /* Significantly increase the height of each item */
+    padding-left: 15px;        /* Add more padding to the left of each item */
+    font-weight: normal;       /* Ensure font weight is normal (not bold) */
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                background-color: transparent;
+                border: none; /* Remove default border */
+                padding: 0;
+                icon-size: 100px; /* Adjust icon size if needed */
+            }
+            QPushButton:hover {
+                background-color: rgba(0, 0, 0, 0.1); /* Slightly darkened background */
+                border: none;
+            }
+            QPushButton::icon {
+                padding: 0;
+                border-image: url(path_to_your_image.png); /* Set image */
+            }
+            QPushButton:hover::icon {
+                border-image: url(path_to_your_hover_image.png); /* Blurred or darkened image on hover */
+            }
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>home.png</normaloff>home.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

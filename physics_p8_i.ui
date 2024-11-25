@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>966</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>971</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>p8bg.webp</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>871</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+    background-color: rgba(255, 255, 255, 0.9); /* White background with 80% opacity */
+    border-radius: 50px; /* Rounded corners */
+    padding: 20px; /* Optional: Add some padding inside the box */
+    margin: 20px; /* Optional: Add margin around the box */
+    color: #000000; /* Text color inside the box */
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>60</y>
+      <width>471</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">FONT-SIZE:30PX;</string>
+    </property>
+    <property name="text">
+     <string>2 EQUATION GRAPH PLOT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>490</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #97e233, stop:1 #156b12); /* Bright green to dark green */
+    border-radius: 25px; /* Rounded corners */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+    transition: background 0.5s; /* Adjust transition speed */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #156b12, stop:1 #97e233); /* Dark green to bright green on hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>PLOT GRAPH</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                background-color: transparent;
+                border: none; /* Remove default border */
+                padding: 0;
+                icon-size: 100px; /* Adjust icon size if needed */
+            }
+            QPushButton:hover {
+                background-color: rgba(0, 0, 0, 0.1); /* Slightly darkened background */
+                border: none;
+            }
+            QPushButton::icon {
+                padding: 0;
+                border-image: url(path_to_your_image.png); /* Set image */
+            }
+            QPushButton:hover::icon {
+                border-image: url(path_to_your_hover_image.png); /* Blurred or darkened image on hover */
+            }
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>home.png</normaloff>home.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>220</y>
+      <width>381</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #F0F0F0; /* Light grey background */
+    color: #2E2E2E; /* Dark grey text */
+    border: 2px solid #B0B0B0; /* Grey border */
+    border-top-left-radius: 10px; /* Rounded top-left corner */
+    border-top-right-radius: 10px; /* Rounded top-right corner */
+    border-bottom-left-radius: 10px; /* Flat bottom-left corner */
+    border-bottom-right-radius: 10px; /* Flat bottom-right corner */
+    padding: 5px; /* Padding inside the line edit */
+    font-size: 18px; /* Increase the font size for text */
+}
+
+QLineEdit:focus {
+    border: 2px solid #6A6A6A; /* Darker grey border when focused */
+    background-color: #E0E0E0; /* Slightly darker grey when focused */
+}
+
+QLineEdit::placeholder {
+    color: #A0A0A0; /* Placeholder text color */
+    font-size: 14px; /* Increase the placeholder text size */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>enter equations in term of x</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>210</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">FONT-SIZE:20PX;</string>
+    </property>
+    <property name="text">
+     <string>EQUATION 1 ⇒</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>290</y>
+      <width>381</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #F0F0F0; /* Light grey background */
+    color: #2E2E2E; /* Dark grey text */
+    border: 2px solid #B0B0B0; /* Grey border */
+    border-top-left-radius: 10px; /* Rounded top-left corner */
+    border-top-right-radius: 10px; /* Rounded top-right corner */
+    border-bottom-left-radius: 10px; /* Flat bottom-left corner */
+    border-bottom-right-radius: 10px; /* Flat bottom-right corner */
+    padding: 5px; /* Padding inside the line edit */
+    font-size: 18px; /* Increase the font size for text */
+}
+
+QLineEdit:focus {
+    border: 2px solid #6A6A6A; /* Darker grey border when focused */
+    background-color: #E0E0E0; /* Slightly darker grey when focused */
+}
+
+QLineEdit::placeholder {
+    color: #A0A0A0; /* Placeholder text color */
+    font-size: 14px; /* Increase the placeholder text size */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>example :   5*x**2 +5*x  (** acts like ^)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>280</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">FONT-SIZE:20PX;</string>
+    </property>
+    <property name="text">
+     <string>EQUATION 2 ⇒</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
